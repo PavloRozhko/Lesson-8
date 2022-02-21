@@ -1,0 +1,359 @@
+@import "null.css";
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Taviraj:400&display=swap");
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+}
+/* ========= Статья для использования псевдоклассов и псевдоэлеметнтов =========*/
+.wrap {
+  padding: 0 10px;
+  margin: 0 0 75px 0;
+}
+.text {
+  text-align: justify;
+  text-indent: 25px;
+}
+.title {
+  /* display: inline-block; */
+  /* text-align: center; */
+  margin: 0 0 15px 0;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 140%;
+}
+.title::after {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 75px;
+  margin: 5px 0px 0px 0px;
+  background-color: #2267de;
+  /*
+Возможно, для позиционирования декоративной линии, нарпимер по центру, нужно идругие свойства. Свойство text-align не работает
+*/
+}
+/* .title:hover {
+  color: #2267de;
+  font-size: 50px;
+} */
+.header-wrap {
+  margin: 0 0 35px 0;
+  min-height: 100vh;
+  border: 3px solid #a48346;
+  background: url(../img/bg1.png) 1% 100% / auto no-repeat, url(../img/bg2.png) 99% 100% / auto no-repeat,
+    url(../img/bg4.png) 50% 60% / auto no-repeat, url(../img/bg3.png) 95% 10% / auto no-repeat,
+    linear-gradient(
+      200deg,
+      rgba(237, 187, 114, 1) 10%,
+      rgba(253, 241, 109, 0.95) 20%,
+      rgba(237, 187, 114, 0.9) 30%,
+      rgba(253, 241, 109, 0.85) 40%,
+      rgba(237, 187, 114, 0.8) 50%,
+      rgba(253, 241, 109, 0.85) 60%,
+      rgba(237, 187, 114, 0.9) 70%,
+      rgba(253, 241, 109, 0.95) 80%,
+      rgba(237, 187, 114, 1) 90%
+    );
+}
+.header-top {
+  text-align: center;
+}
+.header-top::before {
+  content: "";
+  display: block;
+  margin: 0 0 100px 0;
+  /* с помомщью этого псевдокласса сделал отступ вниз для ссылки-"кнопки" в шапке статьи */
+}
+.header-link {
+  display: inline-block;
+  padding: 15px 25px;
+  background: #037663;
+  border-radius: 10px;
+  font-size: 56px;
+  line-height: 130%;
+  font-weight: 400;
+  color: #97f3e3;
+  box-shadow: 5px 15px 14px 11px rgba(137, 57, 3, 0.5);
+  outline: 3px solid rgba(255, 255, 0, 0.4);
+}
+.header-link:hover {
+  padding: 20px 30px;
+  background: #379383;
+  font-weight: 900;
+  color: #5bf3d9;
+  outline: 5px solid rgba(255, 255, 0, 0.8);
+}
+/* .header-link:active {
+  padding: 17px 27px; 
+} */
+.header-link:focus {
+  padding: 20px 30px;
+  font-weight: 700;
+  background: #ffc69e;
+  color: #893b03;
+  box-shadow: -2px 1px 7px -2px rgba(137, 57, 3, 0.79) inset;
+  color: #fff;
+}
+/* :active и :focus действуя практически одновременно перебивают стили друг друга */
+.wrap-top {
+  margin: 0 0 35px 0;
+}
+.top-content {
+  margin: 0 0 15px 0;
+}
+.top-content *:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+.top-content p:first-of-type::first-letter {
+  font-size: 32px;
+  font-weight: 900;
+  color: #000;
+}
+.top-list {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  outline: 1px solid #000;
+  border-radius: 5px;
+  background: linear-gradient(186deg, rgba(64, 95, 149, 0.5) 0%, rgba(105, 157, 244, 0.5021358885351015) 100%);
+}
+.list-title {
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 700;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+.list-item {
+  padding: 0 0 4px 35px;
+  background: url(../img/top-list-mark.png) 0 5px / 20px no-repeat;
+  text-transform: capitalize;
+}
+.list-item:last-child {
+  padding: 0 0 0 35px;
+}
+.list-item:hover {
+  font-size: 18px;
+  background: url(../img/top-list-mark.png) 0 5px / 24px no-repeat;
+  text-decoration: underline;
+}
+.wrap-middle {
+  margin: 0 0 35px 0;
+}
+.image {
+  display: none;
+}
+.charecters-list::before {
+  content: "";
+  display: block;
+  margin: 0 0 25px 0;
+}
+.charecters-list {
+  margin: 0 0 25px 0;
+  max-width: 1000px;
+  margin: 0 auto 15px;
+}
+.charecter-item {
+  padding: 0 0 5px 50px;
+}
+.charecter-item:last-child {
+  padding-bottom: 0;
+}
+.charecter-item:hover {
+  font-size: 20px;
+  font-weight: 700;
+}
+.charecter-item:nth-child(odd) {
+  background-color: #0376636e;
+}
+.negative {
+  background: url(../img/negative-mark.png) 0 2px / 25px no-repeat;
+}
+.negative:hover {
+  background: url(../img/negative-mark.png) 0 2px / 35px no-repeat;
+}
+.positive {
+  background: url(../img/positive-mark.png) 0 2px / 25px no-repeat;
+}
+.positive:hover {
+  background: url(../img/positive-mark.png) 0 2px / 35px no-repeat;
+}
+.charecter-item:hover .image {
+  display: block;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.plot {
+  margin: 0 0 35px 0;
+}
+.plot p:not(:last-child) {
+  margin: 0 0 10px 0;
+}
+.awards {
+  margin: 0 0 35px 0;
+}
+.awards-item {
+  padding: 0 0 4px 35px;
+  background: url(../img/awards-list-mark.png) 0 3px / 20px no-repeat;
+}
+.awards-item:last-child {
+  padding-bottom: 0;
+}
+.remakes-item {
+  padding: 0 0 10px 40px;
+}
+.remakes-item::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../img/remakes-list-mark.png) 0 4px / 20px no-repeat;
+  margin: 0 20px 0 -40px;
+}
+.remakes-list li:last-child {
+  padding-bottom: 0;
+}
+.footer-wrap {
+  max-height: 100px;
+  margin: 0;
+  background: #a48346;
+}
+.footer-content {
+  text-align: right;
+}
+.footer-content::before {
+  content: "";
+  display: block;
+  height: 20px;
+  /* "конструкция" с марджином колторая заработала в шапке и списке с персонажами в подвале почему-то не заработал, но нашёл решение в инетернете с высотой */
+}
+.footer-link {
+  display: inline-block;
+  outline: 1px solid #000;
+  padding: 10px 15px;
+  background: #fff;
+  margin: 0 0 20px 0;
+}
+.footer-link:visited {
+  background: #000;
+  color: #fff;
+}
+/* 
+.footer-content {
+  text-align: right;
+}
+.footer-content::before {
+  content: "";
+  display: block;
+  margin: 0 0 100px 0;
+}
+.footer-link {
+  display: inline-block;
+  padding: 15px 25px;
+  background: #037663;
+  border-radius: 10px;
+  font-size: 56px;
+  line-height: 130%;
+  font-weight: 400;
+  color: #97f3e3;
+  box-shadow: 5px 15px 14px 11px rgba(137, 57, 3, 0.5);
+  outline: 3px solid rgba(255, 255, 0, 0.4);
+} 
+*/
+
+/* ============= первая часть макета =============== */
+.title-color {
+  color: #1e212c;
+}
+.about,
+.decoration,
+.link {
+  max-width: 408px;
+  margin: 10px auto 50px;
+}
+.about-subtitle {
+  margin: 0 0 8px 0;
+  line-height: 150%;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.about-tile {
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 130%;
+  margin: 0 0 40px 0;
+}
+.about-list {
+  margin: 0 0 48px 32px;
+}
+.about-list li {
+  padding: 0 0 16px 0;
+}
+.about-list li::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/vector.png) 0 0 / auto no-repeat;
+  margin: 0 16px 0 -32px;
+}
+.about-list li:last-child {
+  padding-bottom: 0;
+}
+/* .list li {
+  padding: 0 0 0 32px;
+  background: url(../img/vector.png) 0 7px / auto no-repeat;
+} */
+.about-button {
+  display: inline-block;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px 32px;
+  margin: 0 0 26px 0;
+}
+
+/* ============= вторая часть макета ============= */
+
+.decoration {
+  font-family: "Taviraj", serif;
+  font-size: 36px;
+  line-height: 1.1;
+  color: #333;
+  margin: 0 auto;
+}
+.decoration h3 {
+  margin: 0px 0px 8px 0px;
+}
+.decoration::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 65px;
+  background-color: #333;
+}
+
+.link {
+  text-align: center;
+  margin: 0 auto 0;
+}
+.link a {
+  display: inline-block;
+  padding: 10px;
+  background: #ffc69e;
+  color: #333;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 15px;
+}
